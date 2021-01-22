@@ -1,0 +1,13 @@
+{
+  "name": "tic-tac-toe-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rick Lubbers <RH.Lubbers@hondsrugcollege.nl>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "arpad": "^2.0.0",
+    "express": "^4.17.1",
+    "serve-static": "^1.14.1",
+    "socket.io": "^3.1.0"
+  }
+}

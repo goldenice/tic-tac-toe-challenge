@@ -1,0 +1,52 @@
+html, body {
+    background: #222528;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    font-size: 14pt;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    gap: 32px;
+    padding: 0 16px;
+}
+
+@media screen and (max-width: 1200px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table thead tr th,
+table tbody tr td {
+    padding: 8px 16px;
+}
+
+table tbody tr:nth-of-type(odd) {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+table thead tr th {
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #ccc;
+    font-size: .8em;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #888;
+    text-align: left;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.win {
+    background: #2c2;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Tic-Tac-Toe Dashboard</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="grid">
+            <div>
+                <h1>User rankings</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Username</th>
+                            <th>Ranking</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ranking-body">
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <h1>Games played</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Player 1</th>
+                            <th>Player 2</th>
+                            <th>Outcome</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="games-body">
+                    </tbody>
+                </table>
+            </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="frontend.js"></script>
+    </body>
+</html>
