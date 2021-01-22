@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Rick Lubbers <RH.Lubbers@hondsrugcollege.nl>",
-  "license": "UNLICENSED",
+  "license": "GPL-3.0-only",
   "dependencies": {
     "arpad": "^2.0.0",
     "express": "^4.17.1",
