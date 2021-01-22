@@ -1,0 +1,10 @@
+{
+  "name": "ttt-c",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rick Lubbers <RH.Lubbers@hondsrugcollege.nl>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "socket.io-client": "^3.1.0"
+  }
+}
