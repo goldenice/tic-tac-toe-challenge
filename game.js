@@ -7,7 +7,7 @@ const DEFAULT_BOARD = [
 // Checks if the transition from boardA -> boardB is a valid move
 function isValidMove(boardA, boardB) {
     return boardA.reduce((valid, field, idx) => valid && (boardB[idx] == field || field == 0), true)
-        && boardA.filter(f => f != 0).length < boardB.filter(f => f != 0).length;
+        && boardA.filter(f => f != 0).length + 1 === boardB.filter(f => f != 0).length;
 }
 
 // Check for done condition
