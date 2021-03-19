@@ -88,11 +88,7 @@ module.exports = function startGame(p1, s1, p2, s2, onDone) {
 
         // Apply move, prepare everything for next turn
         board = newBoard;
-        if(turn == 'p1'){
-          turn = 'p2';
-        } else{
-          turn = 'p1';
-        }
+        turn = turn == 'p1' ? 'p2' : 'p1';
         doNextTurn();
     }
 
