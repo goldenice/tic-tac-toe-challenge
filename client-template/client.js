@@ -2,10 +2,14 @@
 const USERNAME = '';
 
 // This is what you need to update
+//Generate random move
 function myAImove(board) {
+  //Check for empty fields
   const options = board.map((f, idx) => f == 0 ? idx : null).filter(x => x != null);
+  //Return random move
   return doMove(board, options[Math.floor(Math.random() * options.length)], -1);
 }
+
 
 // Returns an updated board with the field filled out
 function doMove(board, fieldIdx, value) {
