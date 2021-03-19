@@ -91,7 +91,7 @@ module.exports = function startGame(p1, s1, p2, s2, onDone) {
         turn = turn == 'p1' ? 'p2' : 'p1';
         doNextTurn();
     }
-
+// Quinten was hier
     function doNextTurn() {
         const currentTurnPlayer = (turn == 'p1' ? p1 : p2);
 
