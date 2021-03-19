@@ -12,7 +12,9 @@ function isValidMove(boardA, boardB) {
 
 // Check for done condition
 function checkDone(board) {
-  if (board[0] !== 0 && board[0] === board[1] && board[1] === board[2]) {
+  if (board.filter(f => f === 0).length === 0) { // draw
+    return { done: true, winPlayer: 0 };
+  } else  if (board[0] !== 0 && board[0] === board[1] && board[1] === board[2]) {
     return { done: true, winPlayer: board[0] };
   } else if (board[3] !== 0 && board[3] === board[4] && board[4] === board[5]) {
     return { done: true, winPlayer: board[3] };
@@ -28,8 +30,6 @@ function checkDone(board) {
     return { done: true, winPlayer: board[0] };
   } else if (board[2] !== 0 && board[2] === board[4] && board[4] === board[6]) {
     return { done: true, winPlayer: board[2] };
-  } else if (board.filter(f => f === 0).length === 0) { // draw
-    return { done: true, winPlayer: 0 };
   } else {
     return { done: false };
   }
