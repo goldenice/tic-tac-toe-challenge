@@ -1,7 +1,9 @@
 const fs = require('fs');
 const Arpad = require('arpad');
 const elo = new Arpad();
+if(!fs.existsSync('rankings.json')){fs.writeFileSync('rankings.json','{}')}
 const rankings = JSON.parse(fs.readFileSync('rankings.json', 'utf-8') || '{}');
+if(!fs.existsSync('games.json')){fs.writeFileSync('games.json','{}')}
 const gamesPlayed = JSON.parse(fs.readFileSync('games.json', 'utf-8') || '[]');
 
 const lobby = {};
