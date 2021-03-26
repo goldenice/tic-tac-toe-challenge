@@ -35,6 +35,7 @@ function checkDone(board) {
   }
 }
 
+// Starts the game
 module.exports = function startGame(p1, s1, p2, s2, onDone) {
     const gameId = Math.floor(Math.random() * 65535);
     let turn = 'p1';
