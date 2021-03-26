@@ -7,10 +7,8 @@ The goal is to allow students to compete with each other in writing a tic-tac-to
 # Setup
 1. Clone the repository
 2. Run `yarn install --frozen-lockfile`
-3. Create a file `rankings.json` with `{}` as content
-4. Create a file `games.json` with `[]` as content
-5. Run the command `node server.js` to start the server
-6. Open the dashboard on `http://localhost:1337`
+3. Run the command `node server.js` to start the server
+4. Open the dashboard on `http://localhost:1337`
 
 The clients can be started from the `client-template` subfolder, by running `node client.js [your-client-name]` in that folder. This folder ALSO needs a `yarn install --frozen-lockfile` command. 
 
